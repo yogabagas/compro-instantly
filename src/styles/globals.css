@@ -1,0 +1,310 @@
+/* Import Satoshi Font */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400,300&display=swap');
+
+/* Theme Variables */
+:root {
+  /* Light Mode Colors */
+  --color-primary: #ADFB49;
+  --color-secondary: #022759;
+  --color-accent: #E8ECF0;
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #E8ECF0;
+  --color-text-primary: #121212;
+  --color-text-secondary: #4a5568;
+  --color-text-inverse: #FFFFFF;
+  --gradient-start: #022759;
+  --gradient-end: #ADFB49;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-md: rgba(0, 0, 0, 0.15);
+  --shadow-lg: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] {
+  /* Dark Mode Colors */
+  --color-primary: #ADFB49;
+  --color-secondary: #022759;
+  --color-accent: #2d3748;
+  --color-bg-primary: #121212;
+  --color-bg-secondary: #1a1a1a;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #a0aec0;
+  --color-text-inverse: #121212;
+  --gradient-start: #022759;
+  --gradient-end: #ADFB49;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --shadow-md: rgba(0, 0, 0, 0.4);
+  --shadow-lg: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  position: relative;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  line-height: 1.8;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.header, .footer {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(173, 251, 73, 0.2);
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: var(--color-text-inverse);
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  scroll-margin-top: 100px;
+}
+
+[data-theme='dark'] .hero {
+  background: linear-gradient(135deg, #011d42 0%, #8fd934 100%);
+}
+
+.about, .products, .services, .team {
+  padding: 80px 0;
+  background: var(--color-bg-primary);
+  margin: 40px auto;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px var(--shadow-md);
+  border: 1px solid var(--color-accent);
+  transition: all 0.3s ease;
+  scroll-margin-top: 100px;
+}
+
+.about h1, .products h1, .services h2, .team h2 {
+  color: var(--color-text-primary);
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about p, .products p, .services p {
+  font-size: 1.125rem;
+  margin-bottom: 30px;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.about ul, .products ul, .services ul, .team ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about ul li, .products ul li, .team ul li {
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  background: var(--color-bg-secondary);
+  border-left: 4px solid var(--color-primary);
+  transition: all 0.3s ease;
+  color: var(--color-text-primary);
+}
+
+.about ul li:hover, .products ul li:hover, .team ul li:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px var(--shadow-md);
+  background: var(--color-accent);
+}
+
+.services ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.services ul li {
+  background: var(--color-bg-secondary);
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 40px var(--shadow);
+}
+
+.services ul li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.services ul li:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 60px var(--shadow-lg);
+}
+
+.services ul li:hover::before {
+  opacity: 1;
+}
+
+.services ul li h3 {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.services ul li p {
+  color: var(--color-text-secondary);
+}
+
+.team-member {
+  margin: 10px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: var(--color-text-inverse);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px var(--shadow-lg);
+}
+
+.button:hover::before {
+  left: 100%;
+}
+
+.button:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .about, .products, .services, .team {
+    padding: 50px 20px;
+    margin: 20px auto;
+  }
+
+  .services ul {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+}
