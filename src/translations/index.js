@@ -390,15 +390,15 @@ export const translations = {
       members: [
         {
           name: 'Yoga Bagasakthi',
-          role: 'President Director & Board Member'
+          role: 'President Director'
         },
         {
           name: 'Ariandi Nugraha',
-          role: 'Board Member'
+          role: 'Vice President Director'
         },
         {
           name: 'Fitriyadi',
-          role: 'Board Member'
+          role: 'Director'
         }
       ]
     },
