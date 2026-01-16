@@ -29,10 +29,14 @@ const Products = () => {
                   <span className="feature-tag" key={i}>{tag}</span>
                 ))}
               </div>
-              {index === 0 && (
+              {index === 0 ? (
                 <Link to="/customer-relation" className="discover-more-btn">
                   {t.customerRelation.discoverMore} →
                 </Link>
+              ) : (
+                <button className="coming-soon-btn" disabled>
+                  {t.products.comingSoon}
+                </button>
               )}
             </div>
           ))}

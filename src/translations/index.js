@@ -47,6 +47,7 @@ export const translations = {
       badge: 'Solusi Kami',
       title: 'Platform Instantly',
       intro: 'Satu platform, kemungkinan tanpa batas. Transformasikan bisnis Anda dengan solusi komprehensif yang dirancang untuk perusahaan modern.',
+      comingSoon: 'Segera Hadir',
       solutions: [
         {
           number: '01',
@@ -268,6 +269,10 @@ export const translations = {
             description: 'Handle ribuan percakapan simultan tanpa menambah headcount'
           },
           {
+            title: 'Jangkauan Pelanggan yang Lebih Luas',
+            description: 'Jangkau pelanggan melalui berbagai saluran komunikasi dan perluas kesadaran merek Anda'
+          },
+          {
             title: 'Data-Driven Decisions',
             description: 'Ambil keputusan berdasarkan data dan insights dari interaksi pelanggan'
           }
@@ -329,6 +334,7 @@ export const translations = {
       badge: 'Our Solutions',
       title: 'Instantly Platform',
       intro: 'One platform, infinite possibilities. Transform your business with comprehensive solutions designed for the modern enterprise.',
+      comingSoon: 'Coming Soon',
       solutions: [
         {
           number: '01',
@@ -548,6 +554,10 @@ export const translations = {
           {
             title: 'Unlimited Scalability',
             description: 'Handle thousands of simultaneous conversations without adding headcount'
+          },
+          {
+            title: 'Expanded Customer Reach',
+            description: 'Reach customers through various communication channels and expand your brand awareness'
           },
           {
             title: 'Data-Driven Decisions',
