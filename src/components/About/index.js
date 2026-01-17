@@ -17,15 +17,15 @@ const About = () => {
         
         <div className="about-grid">
           <div className="about-card">
-            <div className="card-icon">🚀</div>
-            <h3>{t.about.mission.title}</h3>
-            <p>{t.about.mission.description}</p>
-          </div>
-          
-          <div className="about-card">
             <div className="card-icon">💡</div>
             <h3>{t.about.vision.title}</h3>
             <p>{t.about.vision.description}</p>
+          </div>
+          
+          <div className="about-card">
+            <div className="card-icon">🚀</div>
+            <h3>{t.about.mission.title}</h3>
+            <p>{t.about.mission.description}</p>
           </div>
           
           <div className="about-card">

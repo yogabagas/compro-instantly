@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="stat-label">{t.hero.stats.partners}</div>
         </div>
         <div className="stat-item">
-          <div className="stat-number">4+</div>
+          <div className="stat-number">5+</div>
           <div className="stat-label">{t.hero.stats.solutions}</div>
         </div>
         <div className="stat-item">

@@ -21,7 +21,7 @@ const Products = () => {
           {t.products.solutions.map((solution, index) => (
             <div className="product-card" key={index}>
               <div className="product-number">{solution.number}</div>
-              <div className="product-icon">{['💬', '📈', '🛍️', '⭐'][index]}</div>
+              <div className="product-icon">{['💬', '👥', '🖥️', '⭐'][index]}</div>
               <h3>{solution.title}</h3>
               <p>{solution.description}</p>
               <div className="product-features">

@@ -7,7 +7,7 @@ const Services = () => {
   const { language } = useLanguage();
   const t = useTranslation(language);
 
-  const icons = ['🎯', '⚡', '🔒', '🤝'];
+  const icons = ['🎯', '📊', '🔒', '👨🏻‍💻'];
 
   return (
     <section className="services" id="services">
