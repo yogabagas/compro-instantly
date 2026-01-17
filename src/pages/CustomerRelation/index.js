@@ -103,9 +103,9 @@ const CustomerRelation = () => {
           <h2>{t.customerRelation.benefits.title}</h2>
           <div className="benefits-list">
             {t.customerRelation.benefits.list.map((benefit, index) => (
-              <div className="benefit-item" key={index}>
-                <div className="benefit-icon">✓</div>
-                <div className="benefit-content">
+              <div className="cr-benefit-item" key={index}>
+                <div className="cr-benefit-icon">✓</div>
+                <div className="cr-benefit-content">
                   <h3>{benefit.title}</h3>
                   <p>{benefit.description}</p>
                 </div>
